@@ -1,0 +1,11 @@
+name: docker-image-workflow
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ububtu-latest
+    steps:
+    - name: checkout code
+    uses: actions/checkout@v3
